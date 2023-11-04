@@ -18,7 +18,9 @@ Output: -1
  */
 class LetterCountI {
     public static void main(String[] args) {
-        System.out.println(letterCountI("aa"));
+        System.out.println(letterCountI("Today, is the greatest day ever!"));
+        System.out.println(letterCountI("Hello apple pie"));
+        System.out.println(letterCountI("No words"));
     }
 
     public static String letterCountI(String str) {

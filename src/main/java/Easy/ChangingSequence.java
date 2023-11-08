@@ -27,9 +27,7 @@ class ChangingSequence {
         // if arr[1] > arr[0] -> increasing
         // else decreasing
         for (int i = 2; i < arr.length; i++) {
-            if (arr[1] > arr[0] && arr[i] < arr[i - 1]) {
-                return i - 1;
-            } else if (arr[1] < arr[0] && arr[i] > arr[i - 1]) {
+            if (arr[1] > arr[0] && arr[i] < arr[i - 1] || arr[1] < arr[0] && arr[i] > arr[i - 1]) {
                 return i - 1;
             }
         }

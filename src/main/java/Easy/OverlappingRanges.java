@@ -24,6 +24,9 @@ class OverlappingRanges {
     }
 
     public static boolean overlappingRanges(int[] arr) {
-        return arr[1] - arr[0] >= arr[4] && arr[3] - arr[2] >= arr[4];
+        int intersectionStart = Math.max(arr[0], arr[2]);
+        int intersectionEnd = Math.min(arr[1], arr[3]);
+        int overlapSize = Math.max(0, intersectionEnd - intersectionStart + 1);
+        return overlapSize >= arr[4];
     }
 }

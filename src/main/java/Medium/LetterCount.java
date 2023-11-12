@@ -1,4 +1,4 @@
-package Easy;
+package Medium;
 
 import java.util.Comparator;
 import java.util.HashMap;
@@ -16,7 +16,7 @@ Output: Hello
 Input: "No words"
 Output: -1
  */
-class LetterCountI {
+class LetterCount {
     public static void main(String[] args) {
         System.out.println(letterCountI("Today, is the greatest day ever!"));
         System.out.println(letterCountI("Hello apple pie"));
